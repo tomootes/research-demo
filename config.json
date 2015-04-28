@@ -1,0 +1,16 @@
+[
+{
+    "url":"http://research.geodan.nl/sites/buurten",
+    "title":"CBS Vector Tiles",
+    "tags":["vector tiles","filter","polymer","leaflet","cbs","html5"],
+    "thumbnail":"thumbnails/buurten.gif",
+    "description":"A viewer which allows for dynamic filtering on attributes using vector tiles"
+},
+{
+    "url":"http://research.geodan.nl/sites/LODUI",
+    "title":"Cerise",
+    "tags":["d3","animation","energy","html5"],
+    "thumbnail":"thumbnails/cerise.gif"
+
+}
+]
