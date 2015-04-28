@@ -11,6 +11,89 @@
     "title":"Cerise",
     "tags":["d3","animation","energy","html5"],
     "thumbnail":"thumbnails/cerise.gif"
-
+},
+{
+    "title": "Relatie diagram", 
+    "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html"
+},
+{
+    "title": "Erplex projecten", 
+    "url": "http://model.geodan.nl/main/d3test/erplex_projecten.html"
+},           
+{
+    "title": "Punten op de kaart (NS & Twitter UI)",
+	"url": "./nstwitter"
+},
+{   
+    "title": "D3 vectorkaart (OV9292 data)",
+	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html"
+},  
+{
+	"title": "Websockets (COW)",
+	"url": "http://research.geodan.nl/sites/geofort/cow/demo/"
+},                  
+{
+	"title": "Vectortiles en topojson",
+	"url": "http://research.geodan.nl/sites/vectortiles/"
+},                
+{
+	"title": "AHN in Webgl",
+	"url": "http://model.geodan.nl/main/d3test/webgl1.html"
+},                         
+{
+	"title": "Bag 3D",
+	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html"
+},                
+{
+	"title": "Kadaster routes",
+	"url": "http://research.geodan.nl/sites/kadaster/index5.html"
+},                                                  
+{
+	"title": "Kadaster kampen",
+	"url": "http://research.geodan.nl/sites/kadaster/kampen.html"
+},                                                 
+{
+	"title": "Kadaster bag",
+	"url": "http://research.geodan.nl/sites/kadaster/bag2.html"
+},                                                    
+{
+	"title": "Hoe hoog?",
+	"url": "http://research.geodan.nl/sites/hoogte/"
+},                                                                   
+{
+	"title": "BAG bouwjaar",
+	"url": "http://bag.edugis.nl/"
+},               
+{
+	"title": "Waalweelde",
+	"url": "http://research.geodan.nl/sites/waalweelde/service/"
+},                                                       
+{
+	"title": "Dynamic Holland Shading",
+	"url": "http://research.geodan.nl/sites/ahn"
+},
+{
+	"title": "FalconViewer",
+	"url": "http://research.geodan.nl/sites/Falcon/"
+},
+{
+	"title": "Cerise energie",
+	"url": "http://research.geodan.nl/sites/LODUI/"
+},
+{
+	"title": "ESPON",
+	"url": "http://espon.geodan.nl/citybench3/"
+},                                                                             
+{
+	"title": "TOP10NL 3D",
+	"url": "http://research.geodan.nl/sites/topo3d/geodan.html"
+},
+{
+	"title": "Natuurbrandmodel",
+	"url": "http://model.geodan.nl/main/gmi/"
+},
+{
+	"title": "BGT 3D",
+	"url": "./bgt_3d/index.html"
 }
 ]

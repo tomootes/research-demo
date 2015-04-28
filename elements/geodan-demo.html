@@ -7,17 +7,16 @@
 <link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
 <link rel="import" href="../bower_components/core-menu/core-menu.html">
 <link rel="import" href="../bower_components/core-item/core-item.html">
-<script src="../bower_components/leaflet/dist/leaflet-src.js"></script>     
-<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script> 
+
 
 <polymer-element name="geodan-demo">
   <template>
-        <link rel="stylesheet" href="../bower_components/leaflet/dist/leaflet.css" no-shim/>    
+       
     <style>
  
     .demo {
         display: inline-block;
-        width: 300px;
+        width: 200px;
         cursor: pointer;
         margin: 5px;
         background: white;
@@ -26,14 +25,15 @@
     }
     .content {
         background: white;        
-        padding: 5px;       
+        padding: 5px; 
+height: 200px;        
     }
     .content img {
         max-width: 95%;        
     }   
     
     .card-content {
-        height: 200px;
+        
         overflow: auto;
         text-decoration: none !important;
     }
@@ -57,18 +57,10 @@
     .subcontent {
         overflow: auto;
     }
-    #map {
-        float:right;
-        position: absolute;
-        top:0px;
-        bottom:0px;
-        left:0px;
-        right:0px;
-        background:white;
-    }
+   
     .tag {
         margin:5px;
-        
+        background: white;
     }
     .tag paper-shadow {
         padding:3px;
@@ -80,7 +72,9 @@
         font-size: 80%;
         color: #333;
     }
+
     </style>
+    
 <core-scaffold >
   <core-header-panel navigation flex mode="waterfall">
     <core-toolbar><a href="../"><img src="http://www.geodan.nl/wp-content/themes/geodan/img/logo.png"></a></core-toolbar>
@@ -100,8 +94,8 @@
     </div>
   </core-header-panel>
   <div class="header" tool>Geodan Research demos</div>
-  <div id="map"></div>
-  <div horizontal layout><template repeat="{{demo in resultaat}}">
+  
+  <div horizontal layout wrap ><template repeat="{{demo in resultaat}}">
     <a  class="demo" href="{{demo.url}}"><paper-shadow>
     <div class="content" on-mouseover="{{hover}}" on-mouseout="{{unhover}}"><h2>{{demo.title}}</h2>
     <div class="card-content">
@@ -166,6 +160,7 @@
         var taglist ={};        
         this.demos = d.detail.response;             
         this.demos.forEach(function(d){
+            d.tags=d.tags?d.tags:[];
             d.tags.push(d.title);
             d.tags.forEach(function(t){
                 if(taglist[t]===undefined){
@@ -183,11 +178,7 @@
         this.demos = this.demos || [];        
         this.tags = this.tags || [];        
         this.resultaat = this.resultaat || []; 
-        map = L.map(this.$.map).setView([52.342, 4.91], 14);    
-        var color = new L.StamenTileLayer("watercolor",{opacity:0.3});
-        var toner = new L.StamenTileLayer("toner");
-        map.addLayer(color);      
-        map.zoomControl.removeFrom(map);
+       
     }    
   });
   </script>

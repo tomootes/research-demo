@@ -8,8 +8,9 @@
     <title>Geodan Research demo's</title>
         <!-- 1. Load webcomponents.min.js for polyfill support. -->
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>   
-
-    
+<script src="bower_components/leaflet/dist/leaflet-src.js"></script>     
+<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script> 
+     <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" no-shim/>    
     <link rel="import" href="elements/geodan-demo.html">
     
    
@@ -21,13 +22,37 @@
 font-size:14px;font-family:"RobotoDraft",Helvetica,Arial,sans-serif;font-weight:300;line-height:20px
 }
 html /deep/   core-toolbar {
-    background:white;
+    background:rgba(255,255,255,0.9);
     color: black;
 }
+html /deep/   core-header-panel[main] {
+    background:rgba(255,255,255,0);
+    color: black;
+}html /deep/   div[drawer] {
+    background:rgba(255,255,255,0.6);
+    color: black;
+}
+ #map {
+        float:right;
+        position: absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        background:white;
+    }
 </style>
 
 </head>
 <body fullbleed layout vertical>
+<div id="map"></div>
 <geodan-demo></geodan-demo>
+<script>
+var map = L.map("map").setView([52.342, 4.91], 14);    
+        var color = new L.StamenTileLayer("watercolor",{opacity:0.3});
+        var toner = new L.StamenTileLayer("toner");
+        map.addLayer(color);      
+        map.zoomControl.removeFrom(map);
+        </script>
 </body>
 </html>
