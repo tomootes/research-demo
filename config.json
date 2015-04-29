@@ -49,16 +49,20 @@
 {
 	"title": "Kadaster routes",
 	"url": "http://research.geodan.nl/sites/kadaster/index5.html",
-    "thumbnails": "thumbnails/kadaster-animatie.gif",
+    "thumbnail": "thumbnails/kadaster-animatie.gif",
     "tags":["html5","animation","route","vector"]
 },                                                  
 {
 	"title": "Kadaster kampen",
-	"url": "http://research.geodan.nl/sites/kadaster/kampen.html"
+	"url": "http://research.geodan.nl/sites/kadaster/kampen.html",
+    "thumbnail":"thumbnails/kadaster-kampen.gif",
+    "tags":["vector","filtering","parcels"]
 },                                                 
 {
 	"title": "Kadaster bag",
 	"url": "http://research.geodan.nl/sites/kadaster/bag2.html"
+    "thumbnail":"thumbnails/kadaster-bag.gif",
+    "tags":["vector","filtering","buildings"]
 },                                                    
 {
 	"title": "Hoe hoog?",
