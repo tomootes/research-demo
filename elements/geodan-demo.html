@@ -30,7 +30,7 @@ height: 200px;
     }           
     .content img {
         max-width: 95%; 
-        max-height: 140px;
+        max-height: 125px;
     }   
     
     .card-content {
@@ -107,7 +107,7 @@ height: 200px;
     <div class="card-content">
     <template if="{{!demo.hover||!demo.description}}">
     <img src="{{demo.thumbnail}}"/>
-    <span class="date">{{demo.date}}</span>
+    <div class="date">{{demo.date}}</div>
     </template>
     <template if="{{demo.hover}}">
     {{demo.description}}
