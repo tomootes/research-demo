@@ -175,6 +175,14 @@
     "description":"A mobile-first application to show that geo-information doesn't need maps to be useful"
 },                                                                   
 {
+	"title": "Dynamische AHN",
+	"url": "http://stvno.github.io/page/ahn",
+    "thumbnail":"thumbnails/ahn2.gif",
+    "tags":["canvas","html5","ahn","ahn2","height","slider","dynamic"],
+    "date":"february 2012",
+    "description":"By encoding the heightof the Netherlands in specific PNG-tiles, this viewer uses canvas to rapidly change the classification of the height data"
+},                                                                   
+{
 	"title": "BAG bouwjaar",
 	"url": "http://bag.edugis.nl/",
     "thumbnail":"thumbnails/ibag.gif",
