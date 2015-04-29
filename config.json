@@ -14,7 +14,8 @@
 },
 {
     "title": "Relatie diagram", 
-    "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html"
+    "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html",
+    "tags":["d3"]
 },
 {
     "title": "Erplex projecten", 
