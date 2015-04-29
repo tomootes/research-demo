@@ -68,14 +68,7 @@
     "thumbnail": "thumbnails/kadaster-animatie.gif",
     "tags":["html5","animation","route","vector"],
     "date":"september 2012"
-},                                                  
-{
-	"title": "Kadaster kampen",
-	"url": "http://research.geodan.nl/sites/kadaster/kampen.html",
-    "thumbnail":"thumbnails/kadaster-kampen.gif",
-    "tags":["vector","filtering","parcels"],
-    "date":"september 2012"
-},                                                 
+},                                                
 {
 	"title": "Kadaster bag",
 	"url": "http://research.geodan.nl/sites/kadaster/bag2.html",
