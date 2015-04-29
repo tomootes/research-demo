@@ -5,7 +5,7 @@
     "tags":["vector tiles","filter","polymer","leaflet","cbs","html5"],
     "thumbnail":"thumbnails/buurten.gif",
     "description":"A viewer which allows for dynamic filtering on attributes using vector tiles",
-    "date":"may 2015"
+    "date":"april 2015"
 },
 {
     "url":"http://research.geodan.nl/sites/LODUI",
@@ -80,7 +80,8 @@
 	"title": "BAG bouwjaar",
 	"url": "http://bag.edugis.nl/",
     "thumbnail":"thumbnails/ibag.gif",
-    "tags":["canvas","html5","bag","buildings","time","slider","dynamic"]
+    "tags":["canvas","html5","bag","buildings","time","slider","dynamic"],
+    "date":"January 2012"
 },               
 {
 	"title": "Waalweelde",
