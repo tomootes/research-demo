@@ -35,7 +35,8 @@
 	"title": "Websockets (COW)",
 	"url": "http://research.geodan.nl/sites/geofort/cow/demo/",
     "thumbnail":"thumbnails/cow.gif",
-    "tags":["websockets","instant","communication","html5","crisis management"]
+    "tags":["websockets","instant","communication","html5","crisis management"],
+    "date":"November 2013"
 },                  
 {
 	"title": "Vectortiles en topojson",
@@ -56,25 +57,29 @@
 	"title": "Kadaster routes",
 	"url": "http://research.geodan.nl/sites/kadaster/index5.html",
     "thumbnail": "thumbnails/kadaster-animatie.gif",
-    "tags":["html5","animation","route","vector"]
+    "tags":["html5","animation","route","vector"],
+    "date":"September 2012"
 },                                                  
 {
 	"title": "Kadaster kampen",
 	"url": "http://research.geodan.nl/sites/kadaster/kampen.html",
     "thumbnail":"thumbnails/kadaster-kampen.gif",
-    "tags":["vector","filtering","parcels"]
+    "tags":["vector","filtering","parcels"],
+    "date":"September 2012"
 },                                                 
 {
 	"title": "Kadaster bag",
 	"url": "http://research.geodan.nl/sites/kadaster/bag2.html",
     "thumbnail":"thumbnails/kadaster-bag.gif",
-    "tags":["vector","filtering","buildings"]
+    "tags":["vector","filtering","buildings"],
+    "date":"September 2012"
 },                                                    
 {
 	"title": "Hoe hoog?",
 	"url": "http://research.geodan.nl/sites/hoogte/",
     "thumbnail":"thumbnails/hoogte.jpg",
-    "tags":["ahn","mobile","nomap","geolocation"]
+    "tags":["ahn","mobile","nomap","geolocation"],
+    "date":"March 2012"
 },                                                                   
 {
 	"title": "BAG bouwjaar",
@@ -87,13 +92,15 @@
 	"title": "Waalweelde",
 	"url": "http://research.geodan.nl/sites/waalweelde/service/",
     "thumbnail":"thumbnails/waalweelde.gif",
-    "tags":["model","classification","vegetation","landuse","html5"]
+    "tags":["model","classification","vegetation","landuse","html5"],
+    "date":"February 2014"
 },                                                       
 {
 	"title": "Dynamic Holland Shading",
 	"url": "http://research.geodan.nl/sites/ahn",
     "thumbnail":"thumbnails/hollandshading.gif",
-    "tags":["html5","ahn","shading","dynamic","slider","canvas"]
+    "tags":["html5","ahn","shading","dynamic","slider","canvas"],
+    "date":"April 2014"
 },
 {
 	"title": "FalconViewer",
