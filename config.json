@@ -29,7 +29,7 @@
     "date":"2013"
 },           
 {   
-    "title": "D3 vectorkaart (OV9292 data)",
+    "title": "OV vectordata",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html",
 	"thumbnail":"thumbnails/ovdemo.gif",
 	"date":"2013"
@@ -115,11 +115,6 @@
     "thumbnail":"thumbnails/falcon.gif",
     "tags":["unity","3d","falcon"],
     "date":"2014"
-},
-{
-	"title": "Cerise energie",
-	"url": "http://research.geodan.nl/sites/LODUI/",
-	"tags": ["cerise", "d3", "energie", "linked data","lod"]
 },
 {
 	"title": "ESPON",
