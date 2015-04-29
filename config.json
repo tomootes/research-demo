@@ -8,12 +8,77 @@
     "date":"april 2015"
 },
 {
+        "title": "Mappu",
+        "url": "./mappu/index.html",
+	"thumbnail":"./thumbnails/mappu.gif",
+        "tags": ["mappu", "3d"],
+        "date":"march 2015"
+},
+{
+	"title": "BGT 3D",
+	"url": "./bgt_3d/index.html",
+	"thumbnail":"./thumbnails/bgt3d.gif",
+	"tags": ["bgt", "3d", "webgl", "x3d"],
+	"date":"february 2015"
+},                                                                            
+{
+	"title": "TOP10NL 3D",
+	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
+	"tags": ["top10nl", "3d", "webgl", "x3d"],
+	"date":"december 2014"
+},
+{
+	"title": "Vectortiles en topojson",
+	"url": "http://research.geodan.nl/sites/vectortiles/",
+	"tags": ["vectortiles", "d3", "topojson"],
+    "thumbnail":"thumbnails/vectortiles.gif",
+    "date":"september 2014"
+},
+{
+	"title": "Natuurbrandmodel",
+	"url": "http://model.geodan.nl/main/gmi/",
+	"thumbnail":"./thumbnails/natuurbrand.gif",
+	"tags": ["natuubrand", "geoext", "model"],
+	"date":"august 2014"
+},                                                          
+{
+	"title": "Dynamic Holland Shading",
+	"url": "http://research.geodan.nl/sites/ahn",
+    "thumbnail":"thumbnails/hollandshading.gif",
+    "tags":["html5","ahn","shading","dynamic","slider","canvas"],
+    "date":"april 2014",
+    "description":"By encoding the AHN DEM in special tiles, this viewer allows for interactively show the hill shade given a specific date and time"
+},            
+{
+	"title": "Waalweelde",
+	"url": "http://research.geodan.nl/sites/waalweelde/service/",
+    "thumbnail":"thumbnails/waalweelde.gif",
+    "tags":["model","classification","vegetation","landuse","html5"],
+    "date":"february 2014",
+    "description":"Proof of concept to show how vegetation succession modelling can be utilised in river-management. It calculates the type of vegetation in 10 years for the selected area"
+}, 
+{
+	"title": "FalconViewer",
+	"url": "http://research.geodan.nl/sites/Falcon/",
+    "thumbnail":"thumbnails/falcon.gif",
+    "tags":["unity","3d","falcon"],
+    "date":"2014"
+},
+{
     "url":"http://research.geodan.nl/sites/LODUI",
     "title":"Cerise",
     "tags":["d3","animation","energy","html5"],
     "thumbnail":"thumbnails/cerise.gif",
     "date":"2014"
 },
+{
+	"title": "Websockets (COW)",
+	"url": "http://research.geodan.nl/sites/geofort/cow/demo/",
+    "thumbnail":"thumbnails/cow.gif",
+    "tags":["websockets","instant","communication","html5","crisis management"],
+    "date":"november 2013",
+    "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water"
+},  
 {
     "title": "Relatie diagram", 
     "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html",
@@ -34,28 +99,22 @@
 	"thumbnail":"thumbnails/ovdemo.gif",
 	"date":"2013"
 },  
-{
-	"title": "Websockets (COW)",
-	"url": "http://research.geodan.nl/sites/geofort/cow/demo/",
-    "thumbnail":"thumbnails/cow.gif",
-    "tags":["websockets","instant","communication","html5","crisis management"],
-    "date":"november 2013",
-    "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water"
-},                  
-{
-	"title": "Vectortiles en topojson",
-	"url": "http://research.geodan.nl/sites/vectortiles/",
-	"tags": ["vectortiles", "d3", "topojson"],
-    "thumbnail":"thumbnails/vectortiles.gif",
-    "date":"september 2014"
-},                
+                
+               
 {
 	"title": "AHN in Webgl",
 	"url": "http://model.geodan.nl/main/d3test/webgl1.html",
 	"thumbnail":"thumbnails/ahnview.gif",
 	"tags": ["AHN", "3d","webgl", "threejs"],
 	"date":"2013"
-},                         
+},  
+{
+	"title": "ESPON",
+	"url": "http://espon.geodan.nl/citybench3/",
+	"thumbnail":"thumbnails/espon.gif",
+	"tags":["d3"],
+	"date": "2013"
+},                        
 {
 	"title": "Bag 3D",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html",
@@ -94,62 +153,5 @@
     "tags":["canvas","html5","bag","buildings","time","slider","dynamic"],
     "date":"january 2012",
     "description":"By encoding the age of buildings in specific PNG-tiles, this viewer uses canvas to rapidly show the growth of cities over time"
-},               
-{
-	"title": "Waalweelde",
-	"url": "http://research.geodan.nl/sites/waalweelde/service/",
-    "thumbnail":"thumbnails/waalweelde.gif",
-    "tags":["model","classification","vegetation","landuse","html5"],
-    "date":"february 2014",
-    "description":"Proof of concept to show how vegetation succession modelling can be utilised in river-management. It calculates the type of vegetation in 10 years for the selected area"
-},                                                       
-{
-	"title": "Dynamic Holland Shading",
-	"url": "http://research.geodan.nl/sites/ahn",
-    "thumbnail":"thumbnails/hollandshading.gif",
-    "tags":["html5","ahn","shading","dynamic","slider","canvas"],
-    "date":"april 2014",
-    "description":"By encoding the AHN DEM in special tiles, this viewer allows for interactively show the hill shade given a specific date and time"
-},
-{
-	"title": "FalconViewer",
-	"url": "http://research.geodan.nl/sites/Falcon/",
-    "thumbnail":"thumbnails/falcon.gif",
-    "tags":["unity","3d","falcon"],
-    "date":"2014"
-},
-{
-	"title": "ESPON",
-	"url": "http://espon.geodan.nl/citybench3/",
-	"thumbnail":"thumbnails/espon.gif",
-	"tags":["d3"],
-	"date": "2013"
-},                                                                             
-{
-	"title": "TOP10NL 3D",
-	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
-	"tags": ["top10nl", "3d", "webgl", "x3d"],
-	"date":"december 2014"
-},
-{
-	"title": "Natuurbrandmodel",
-	"url": "http://model.geodan.nl/main/gmi/",
-	"thumbnail":"./thumbnails/natuurbrand.gif",
-	"tags": ["natuubrand", "geoext", "model"],
-	"date":"august 2014"
-},
-{
-	"title": "BGT 3D",
-	"url": "./bgt_3d/index.html",
-	"thumbnail":"./thumbnails/bgt3d.gif",
-	"tags": ["bgt", "3d", "webgl", "x3d"],
-	"date":"february 2015"
-},
-{
-        "title": "Mappu",
-        "url": "./mappu/index.html",
-	"thumbnail":"./thumbnails/mappu.gif",
-        "tags": ["mappu", "3d"],
-        "date":"march 2015"
 }
 ]
