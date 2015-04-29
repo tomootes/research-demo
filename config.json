@@ -19,7 +19,8 @@
 },
 {
     "title": "Erplex projecten", 
-    "url": "http://model.geodan.nl/main/d3test/erplex_projecten.html"
+    "url": "http://model.geodan.nl/main/d3test/erplex_projecten.html",
+    "tags":["d3"]
 },           
 {
     "title": "Punten op de kaart (NS & Twitter UI)",
