@@ -44,6 +44,7 @@
 {
 	"title": "Vectortiles en topojson",
 	"url": "http://research.geodan.nl/sites/vectortiles/",
+	"thumbnail":"thumbnails/vectortiles.gif",
 	"tags": ["vectortiles", "d3", "topojson"]
 },                
 {
@@ -126,6 +127,7 @@
 {
 	"title": "TOP10NL 3D",
 	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
+	"thumbnail":"thumbnails/top10nl.gif",
 	"tags": ["top10nl", "3d", "webgl", "x3d"],
 	"date":"december 2014"
 },
