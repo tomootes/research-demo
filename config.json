@@ -39,7 +39,8 @@
 	"url": "http://research.geodan.nl/sites/geofort/cow/demo/",
     "thumbnail":"thumbnails/cow.gif",
     "tags":["websockets","instant","communication","html5","crisis management"],
-    "date":"november 2013"
+    "date":"november 2013",
+    "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water"
 },                  
 {
 	"title": "Vectortiles en topojson",
@@ -66,43 +67,49 @@
 	"title": "Kadaster routes",
 	"url": "http://research.geodan.nl/sites/kadaster/index5.html",
     "thumbnail": "thumbnails/kadaster-animatie.gif",
-    "tags":["html5","animation","route","vector"],
-    "date":"september 2012"
+    "tags":["html5","animation","route","vector","congress"],
+    "date":"september 2012",
+    "description":"A simple demo showing where different participants at a congress are coming from, including the route they took."
 },                                                
 {
 	"title": "Kadaster bag",
 	"url": "http://research.geodan.nl/sites/kadaster/bag2.html",
     "thumbnail":"thumbnails/kadaster-bag.gif",
     "tags":["vector","filtering","buildings"],
-    "date":"september 2012"
+    "date":"september 2012",
+    "description":"A simple demo that allows the user to select buildings based on their usage-type"
 },                                                    
 {
 	"title": "Hoe hoog?",
 	"url": "http://research.geodan.nl/sites/hoogte/",
     "thumbnail":"thumbnails/hoogte.jpg",
     "tags":["ahn","mobile","nomap","geolocation"],
-    "date":"march 2012"
+    "date":"march 2012",
+    "description":"A mobile-first application to show that geo-information doesn't need maps to be useful"
 },                                                                   
 {
 	"title": "BAG bouwjaar",
 	"url": "http://bag.edugis.nl/",
     "thumbnail":"thumbnails/ibag.gif",
     "tags":["canvas","html5","bag","buildings","time","slider","dynamic"],
-    "date":"january 2012"
+    "date":"january 2012",
+    "description":"By encoding the age of buildings in specific PNG-tiles, this viewer uses canvas to rapidly show the growth of cities over time"
 },               
 {
 	"title": "Waalweelde",
 	"url": "http://research.geodan.nl/sites/waalweelde/service/",
     "thumbnail":"thumbnails/waalweelde.gif",
     "tags":["model","classification","vegetation","landuse","html5"],
-    "date":"february 2014"
+    "date":"february 2014",
+    "description":"Proof of concept to show how vegetation succession modelling can be utilised in river-management. It calculates the type of vegetation in 10 years for the selected area"
 },                                                       
 {
 	"title": "Dynamic Holland Shading",
 	"url": "http://research.geodan.nl/sites/ahn",
     "thumbnail":"thumbnails/hollandshading.gif",
     "tags":["html5","ahn","shading","dynamic","slider","canvas"],
-    "date":"april 2014"
+    "date":"april 2014",
+    "description":"By encoding the AHN DEM in special tiles, this viewer allows for interactively show the hill shade given a specific date and time"
 },
 {
 	"title": "FalconViewer",
