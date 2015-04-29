@@ -48,7 +48,9 @@
 },                
 {
 	"title": "Kadaster routes",
-	"url": "http://research.geodan.nl/sites/kadaster/index5.html"
+	"url": "http://research.geodan.nl/sites/kadaster/index5.html",
+    "thumbnails": "thumbnails/kadaster-animatie.gif",
+    "tags":['html5','animation','route','vector']
 },                                                  
 {
 	"title": "Kadaster kampen",
