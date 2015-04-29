@@ -11,32 +11,37 @@
     "url":"http://research.geodan.nl/sites/LODUI",
     "title":"Cerise",
     "tags":["d3","animation","energy","html5"],
-    "thumbnail":"thumbnails/cerise.gif"
+    "thumbnail":"thumbnails/cerise.gif",
+    "date":"2014"
 },
 {
     "title": "Relatie diagram", 
     "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html",
-    "tags":["d3","zorg"]
+    "tags":["d3","zorg"],
+    "date":"2013"
 },
 {
     "title": "Erplex projecten", 
     "url": "http://model.geodan.nl/main/d3test/erplex_projecten.html",
-    "tags":["d3"]
+    "tags":["d3"],
+    "date":"2013"
 },           
 {
     "title": "Punten op de kaart (NS & Twitter UI)",
-	"url": "./nstwitter"
+	"url": "./nstwitter",
+	"date":"2014"
 },
 {   
     "title": "D3 vectorkaart (OV9292 data)",
-	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html"
+	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html",
+	"date":"2013"
 },  
 {
 	"title": "Websockets (COW)",
 	"url": "http://research.geodan.nl/sites/geofort/cow/demo/",
     "thumbnail":"thumbnails/cow.gif",
     "tags":["websockets","instant","communication","html5","crisis management"],
-    "date":"November 2013"
+    "date":"november 2013"
 },                  
 {
 	"title": "Vectortiles en topojson",
@@ -46,61 +51,63 @@
 {
 	"title": "AHN in Webgl",
 	"url": "http://model.geodan.nl/main/d3test/webgl1.html",
-	"tags": ["AHN", "3d","webgl", "threejs"]
+	"tags": ["AHN", "3d","webgl", "threejs"],
+	"date":"2013"
 },                         
 {
 	"title": "Bag 3D",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html",
-	"tags": ["bag", "3d","webgl", "threejs"]
+	"tags": ["bag", "3d","webgl", "threejs"],
+	"date":"2013"
 },                
 {
 	"title": "Kadaster routes",
 	"url": "http://research.geodan.nl/sites/kadaster/index5.html",
     "thumbnail": "thumbnails/kadaster-animatie.gif",
     "tags":["html5","animation","route","vector"],
-    "date":"September 2012"
+    "date":"september 2012"
 },                                                  
 {
 	"title": "Kadaster kampen",
 	"url": "http://research.geodan.nl/sites/kadaster/kampen.html",
     "thumbnail":"thumbnails/kadaster-kampen.gif",
     "tags":["vector","filtering","parcels"],
-    "date":"September 2012"
+    "date":"september 2012"
 },                                                 
 {
 	"title": "Kadaster bag",
 	"url": "http://research.geodan.nl/sites/kadaster/bag2.html",
     "thumbnail":"thumbnails/kadaster-bag.gif",
     "tags":["vector","filtering","buildings"],
-    "date":"September 2012"
+    "date":"september 2012"
 },                                                    
 {
 	"title": "Hoe hoog?",
 	"url": "http://research.geodan.nl/sites/hoogte/",
     "thumbnail":"thumbnails/hoogte.jpg",
     "tags":["ahn","mobile","nomap","geolocation"],
-    "date":"March 2012"
+    "date":"march 2012"
 },                                                                   
 {
 	"title": "BAG bouwjaar",
 	"url": "http://bag.edugis.nl/",
     "thumbnail":"thumbnails/ibag.gif",
     "tags":["canvas","html5","bag","buildings","time","slider","dynamic"],
-    "date":"January 2012"
+    "date":"january 2012"
 },               
 {
 	"title": "Waalweelde",
 	"url": "http://research.geodan.nl/sites/waalweelde/service/",
     "thumbnail":"thumbnails/waalweelde.gif",
     "tags":["model","classification","vegetation","landuse","html5"],
-    "date":"February 2014"
+    "date":"february 2014"
 },                                                       
 {
 	"title": "Dynamic Holland Shading",
 	"url": "http://research.geodan.nl/sites/ahn",
     "thumbnail":"thumbnails/hollandshading.gif",
     "tags":["html5","ahn","shading","dynamic","slider","canvas"],
-    "date":"April 2014"
+    "date":"april 2014"
 },
 {
 	"title": "FalconViewer",
@@ -118,24 +125,28 @@
 {
 	"title": "TOP10NL 3D",
 	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
-	"tags": ["top10nl", "3d", "webgl", "x3d"]
+	"tags": ["top10nl", "3d", "webgl", "x3d"],
+	"date":"december 2014"
 },
 {
 	"title": "Natuurbrandmodel",
 	"url": "http://model.geodan.nl/main/gmi/",
 	"thumbnail":"./thumbnails/natuurbrand.gif",
-	"tags": ["natuubrand", "geoext", "model"]
+	"tags": ["natuubrand", "geoext", "model"],
+	"date":"august 2014"
 },
 {
 	"title": "BGT 3D",
 	"url": "./bgt_3d/index.html",
 	"thumbnail":"./thumbnails/bgt3d.gif",
-	"tags": ["bgt", "3d", "webgl", "x3d"]
+	"tags": ["bgt", "3d", "webgl", "x3d"],
+	"date":"february 2015"
 },
 {
         "title": "Mappu",
         "url": "./mappu/index.html",
 	"thumbnail":"./thumbnails/mappu.gif",
-        "tags": ["mappu", "3d"]
+        "tags": ["mappu", "3d"],
+        "date":"march 2015"
 }
 ]
