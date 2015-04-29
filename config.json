@@ -6,41 +6,48 @@
     "thumbnail":"thumbnails/buurten.gif",
     "description":"A viewer which allows for dynamic filtering on attributes using vector tiles",
     "date":"april 2015"
-},
+},    
 {
         "title": "Mappu",
         "url": "./mappu/index.html",
 	"thumbnail":"./thumbnails/mappu.gif",
         "tags": ["mappu", "3d"],
-        "date":"march 2015"
-},
+        "date":"march 2015",
+        "description":"A new mapping library created by geodan"
+},                 
 {
 	"title": "BGT 3D",
 	"url": "./bgt_3d/index.html",
 	"thumbnail":"./thumbnails/bgt3d.gif",
 	"tags": ["bgt", "3d", "webgl", "x3d"],
-	"date":"february 2015"
-},                                                                            
+	"date":"february 2015",
+	"description":"Showing the result of combining the BGT dataset of NL with pointcloud"
+},                                                         
 {
 	"title": "TOP10NL 3D",
 	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
+	"thumbnail":"thumbnails/top10nl.gif",
 	"tags": ["top10nl", "3d", "webgl", "x3d"],
-	"date":"december 2014"
-},
+	"date":"december 2014",
+	"description":"Showing the result of combining the topographic dataset of NL with pointcloud"
+},             
 {
 	"title": "Vectortiles en topojson",
 	"url": "http://research.geodan.nl/sites/vectortiles/",
 	"tags": ["vectortiles", "d3", "topojson"],
     "thumbnail":"thumbnails/vectortiles.gif",
-    "date":"september 2014"
-},
+    "date":"september 2014",
+    "description":"Simple demo showing the use of vectortiles with different color schemas."
+
+},      
 {
 	"title": "Natuurbrandmodel",
 	"url": "http://model.geodan.nl/main/gmi/",
 	"thumbnail":"./thumbnails/natuurbrand.gif",
 	"tags": ["natuubrand", "geoext", "model"],
-	"date":"august 2014"
-},                                                          
+	"date":"august 2014",
+	"description":"Interface to a forestfire model, used by firefighters"
+},                                             
 {
 	"title": "Dynamic Holland Shading",
 	"url": "http://research.geodan.nl/sites/ahn",
@@ -48,7 +55,7 @@
     "tags":["html5","ahn","shading","dynamic","slider","canvas"],
     "date":"april 2014",
     "description":"By encoding the AHN DEM in special tiles, this viewer allows for interactively show the hill shade given a specific date and time"
-},            
+},          
 {
 	"title": "Waalweelde",
 	"url": "http://research.geodan.nl/sites/waalweelde/service/",
@@ -56,19 +63,20 @@
     "tags":["model","classification","vegetation","landuse","html5"],
     "date":"february 2014",
     "description":"Proof of concept to show how vegetation succession modelling can be utilised in river-management. It calculates the type of vegetation in 10 years for the selected area"
-}, 
-{
-	"title": "FalconViewer",
-	"url": "http://research.geodan.nl/sites/Falcon/",
-    "thumbnail":"thumbnails/falcon.gif",
-    "tags":["unity","3d","falcon"],
-    "date":"2014"
-},
+},       
 {
     "url":"http://research.geodan.nl/sites/LODUI",
     "title":"Cerise",
     "tags":["d3","animation","energy","html5"],
     "thumbnail":"thumbnails/cerise.gif",
+    "description":"Showing the per-hour energy use with the help of linked data, D3 and crossfilter", 
+    "date":"2014"
+},  
+{
+	"title": "FalconViewer",
+	"url": "http://research.geodan.nl/sites/Falcon/",
+    "thumbnail":"thumbnails/falcon.gif",
+    "tags":["unity","3d","falcon"],
     "date":"2014"
 },
 {
@@ -78,11 +86,12 @@
     "tags":["websockets","instant","communication","html5","crisis management"],
     "date":"november 2013",
     "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water"
-},  
+},   
 {
     "title": "Relatie diagram", 
     "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html",
     "thumbnail":"thumbnails/relaties.gif",
+    "description":"A demonstration showing the use of a force-layout diagram with client-service relations.",
     "tags":["d3","zorg"],
     "date":"2013"
 },
@@ -90,37 +99,39 @@
     "title": "Erplex projecten", 
     "url": "http://model.geodan.nl/main/d3test/erplex_projecten.html",
     "thumbnail":"thumbnails/erplexbollen.gif",
+    "description":"Force layout showing the amount of hours spent per project per person.",
     "tags":["d3"],
     "date":"2013"
 },           
 {   
     "title": "OV vectordata",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html",
+	"description":"Large scale aggregated OV data for the Netherlands on a map in D3",
 	"thumbnail":"thumbnails/ovdemo.gif",
 	"date":"2013"
-},  
-                
-               
+},              
 {
 	"title": "AHN in Webgl",
 	"url": "http://model.geodan.nl/main/d3test/webgl1.html",
 	"thumbnail":"thumbnails/ahnview.gif",
 	"tags": ["AHN", "3d","webgl", "threejs"],
-	"date":"2013"
-},  
+	"date":"2013",
+	"description":"Simple demo showing a tile of AHN in webgl, draped with sat image"
+},                         
+{
+	"title": "Bag 3D",
+	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html",
+	"thumbnail":"thumbnails/bag3d.gif",
+	"tags": ["bag", "3d","webgl", "threejs"],
+	"date":"2013",
+	"description":"Simple demo showing the BAG extruded in Threejs"
+},     
 {
 	"title": "ESPON",
 	"url": "http://espon.geodan.nl/citybench3/",
 	"thumbnail":"thumbnails/espon.gif",
 	"tags":["d3"],
 	"date": "2013"
-},                        
-{
-	"title": "Bag 3D",
-	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html",
-	"thumbnail":"thumbnails/bag3d.gif",
-	"tags": ["bag", "3d","webgl", "threejs"],
-	"date":"2013"
 },                
 {
 	"title": "Kadaster routes",
