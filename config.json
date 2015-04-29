@@ -39,7 +39,16 @@
     "date":"september 2014",
     "description":"Simple demo showing the use of vectortiles with different color schemas."
 
-},      
+}, 
+{
+    "title":"Buffer with jsts",
+    "url":"http://research.geodan.nl/sites/buffer",
+    "tags":["buffer","jsts","webgis","ol3"],
+    "thumbnail":"thumbnails/buffer.gif",
+    "date":"september 2014",
+    "description":"Simple test with ol3 & JSTS to draw a buffer around a line, point of polygon with user-set buffer size"
+    
+},     
 {
 	"title": "Natuurbrandmodel",
 	"url": "http://model.geodan.nl/main/gmi/",
@@ -86,6 +95,14 @@
     "tags":["websockets","instant","communication","html5","crisis management"],
     "date":"november 2013",
     "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water"
+},   
+{
+	"title": "Rochelroutes",
+	"url": "http://research.geodan.nl/sites/milieudefensie/",
+    "thumbnail":"thumbnails/milieudefensie.gif",
+    "tags":["video","ultrafijnstof","html5","gps","time","graph","canvas"],
+    "date":"august 2013",
+    "description":"Various cycle-routes through cities to show ultra-fine-dust measurements, using onboard video, GPS and measurements"
 },   
 {
     "title": "Relatie diagram", 
