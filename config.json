@@ -36,15 +36,18 @@
 },                  
 {
 	"title": "Vectortiles en topojson",
-	"url": "http://research.geodan.nl/sites/vectortiles/"
+	"url": "http://research.geodan.nl/sites/vectortiles/",
+	tags: ["vectortiles", "d3", "topojson"]
 },                
 {
 	"title": "AHN in Webgl",
-	"url": "http://model.geodan.nl/main/d3test/webgl1.html"
+	"url": "http://model.geodan.nl/main/d3test/webgl1.html",
+	tags: ["AHN", "3d","webgl", "threejs"]
 },                         
 {
 	"title": "Bag 3D",
-	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html"
+	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html",
+	tags: ["bag", "3d","webgl", "threejs"]
 },                
 {
 	"title": "Kadaster routes",
@@ -94,7 +97,8 @@
 },
 {
 	"title": "Cerise energie",
-	"url": "http://research.geodan.nl/sites/LODUI/"
+	"url": "http://research.geodan.nl/sites/LODUI/",
+	tags: ["cerise", "d3", "energie", "linked data","lod"]
 },
 {
 	"title": "ESPON",
@@ -102,14 +106,17 @@
 },                                                                             
 {
 	"title": "TOP10NL 3D",
-	"url": "http://research.geodan.nl/sites/topo3d/geodan.html"
+	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
+	tags: ["top10nl", "3d", "webgl", "x3d"]
 },
 {
 	"title": "Natuurbrandmodel",
-	"url": "http://model.geodan.nl/main/gmi/"
+	"url": "http://model.geodan.nl/main/gmi/",
+	tags: ["natuubrand", "geoext", "model"]
 },
 {
 	"title": "BGT 3D",
-	"url": "./bgt_3d/index.html"
+	"url": "./bgt_3d/index.html",
+	tags: ["bgt", "3d", "webgl", "x3d"]
 }
 ]
