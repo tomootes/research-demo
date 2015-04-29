@@ -69,19 +69,27 @@
 },                                                    
 {
 	"title": "Hoe hoog?",
-	"url": "http://research.geodan.nl/sites/hoogte/"
+	"url": "http://research.geodan.nl/sites/hoogte/",
+    "thumbnail":"thumbnails/hoogte.png",
+    "tags":["ahn","mobile","nomap","geolocation"]
 },                                                                   
 {
 	"title": "BAG bouwjaar",
-	"url": "http://bag.edugis.nl/"
+	"url": "http://bag.edugis.nl/",
+    "thumbnail":"thumbnails/ibag.gif",
+    "tags":["canvas","html5","bag","buildings","time","slider","dynamic"]
 },               
 {
 	"title": "Waalweelde",
-	"url": "http://research.geodan.nl/sites/waalweelde/service/"
+	"url": "http://research.geodan.nl/sites/waalweelde/service/",
+    "thumbnail":"thumbnails/waalweelde.gif",
+    "tag":["model","classification","vegetation","landuse","html5"]
 },                                                       
 {
 	"title": "Dynamic Holland Shading",
-	"url": "http://research.geodan.nl/sites/ahn"
+	"url": "http://research.geodan.nl/sites/ahn",
+    "thumbnail":"thumbnails/hollandshading.gif",
+    "tags":["html5","ahn","shading","dynamic","slider","canvas"]
 },
 {
 	"title": "FalconViewer",
