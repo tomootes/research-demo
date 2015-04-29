@@ -83,7 +83,7 @@
 	"title": "Waalweelde",
 	"url": "http://research.geodan.nl/sites/waalweelde/service/",
     "thumbnail":"thumbnails/waalweelde.gif",
-    "tag":["model","classification","vegetation","landuse","html5"]
+    "tags":["model","classification","vegetation","landuse","html5"]
 },                                                       
 {
 	"title": "Dynamic Holland Shading",
@@ -117,6 +117,6 @@
 {
 	"title": "BGT 3D",
 	"url": "./bgt_3d/index.html",
-	tags: ["bgt", "3d", "webgl", "x3d"]
+	"tags": ["bgt", "3d", "webgl", "x3d"]
 }
 ]
