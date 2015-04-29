@@ -126,6 +126,7 @@
 {
         "title": "Mappu",
         "url": "./mappu/index.html",
+	"thumbnail":"./thumbnails/mappu.gif",
         "tags": ["mappu", "3d"]
 }
 ]
