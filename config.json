@@ -28,11 +28,6 @@
     "tags":["d3"],
     "date":"2013"
 },           
-{
-    "title": "Punten op de kaart (NS & Twitter UI)",
-	"url": "./nstwitter",
-	"date":"2014"
-},
 {   
     "title": "D3 vectorkaart (OV9292 data)",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html",
