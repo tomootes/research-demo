@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing d3.js in Leaflet.js</title>
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6/leaflet.css" />
+    <script src='http://d3js.org/d3.v2.min.js'></script>
+	<!--[if lte IE 8]>
+			 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6/leaflet.ie.css" />
+		 <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.6/leaflet.js"></script>
+    <script src="tooltip.js"></script>
+    <script src="d3_layer.js"></script>
+	<style type="text/css">
+		body { 
+		  margin:0; padding:0; 
+		  font:normal 14px/20px 'Source Sans Pro', 'Helvetica', sans-serif;
+		  color: white;
+		}
+	  
+	  	h1,h2 {color: white; margin: 2px;}
+		svg , g
+		{
+		  border: solid 3px red;
+		  stroke-width: 1.5px;
+		}
+		#map { position:absolute; top:0; bottom:0; width:100%;}
+		circle
+		{
+			fill-opacity: 0.6;
+		}  
+       .treinen {
+			fill: red;
+			fill-opacity: 1;
+			stroke: #fff;
+			stroke-width: 1px;
+	   }
+	   .ring {
+		  fill: none;
+		  stroke: #c7141a;
+	  }
+	  path
+		{
+		  fill: #E02A2A;
+		  stroke: #fff;
+		}
+	   .tooltip{ background-color:rgba(204,204,255,0.5);;
+          margin: 10px;
+          height: 250px;
+          width: 250px;
+          padding-left: 10px; 
+          padding-top: 10px;
+		  -webkit-border-radius:10px;
+		  -moz-border-radius:10px;
+		  border-radius:10px;
+        }
+    #map-ui {
+        background:rgba(0,0,0,.65);
+        width:420px;
+        z-index:9;
+        position:absolute;
+        top:20px;
+        left:10px;
+        padding:10px;
+    }
+    #map-info {
+        background:rgba(0,0,0,.65);
+        width:220px;
+        z-index:9;
+        position:absolute;
+        top:0px;
+        right:0px;
+        padding:10px;
+        height: 100%;
+    }
+   #date{
+        display:block;
+        color: white;
+    }      
+  .ctrls{display: block;}
+    .ctrl {
+        display:inline-block;
+        width:140px;
+        height:35px;
+        float:left;
+        font-weight: 400;
+        text-decoration:none;
+        color:#333;
+        border-left:1px solid #777;
+        border-top:1px solid #777;
+
+        text-align:center;
+        line-height:35px;
+        background:#555;
+        background:#cccccc;
+        margin:0;
+        box-sizing:border-box;
+    }
+
+    .ctrl:hover {
+        background:rgb(240,240,240);
+        color:#47c965;
+
+    }
+    a.date.active {
+        background:#47c965;
+        color:#fff;
+        border:1px solid #777;
+        border-bottom:0px;
+                border-top:0px;
+
+
+    }
+    .tweet {
+    	text-align:left;
+        text-decoration:none;
+        color:steelBlue;
+        border-left:1px solid #777;
+        border-top:1px solid #777;
+        padding: 5px;
+        cursor: pointer;
+        background:#555;
+        background:#cccccc;
+        margin:2;
+        box-sizing:border-box;
+    }
+    .tweet:hover {
+    	background:rgb(240,240,240);
+        color:#47c965;
+    }
+    
+	</style>
+</head>
+<body>
+
+	<div id="map">
+		<div id='map-ui'>
+			<h1>NS en Twitter</h1>
+			<h2>Live beeld</h2>
+			<div id='date'></div>
+			<div class='ctrls'>
+				<a class='ctrl' href='#' id='play'>&#9658;</a>
+				<!--<a class='ctrl' href='#' id='ffwd'>&#9658;&#9658;</a>-->
+				<!--<a class='ctrl' href='#' id='pause'>&#166;&#166;</a>-->
+				<a class='ctrl' href='#' id='stop'>&#9632;</a>
+			</div>
+			<div>
+				<a class='ctrl' href='#' id='catchbtn'>Place tweet catcher</a>
+			</div>
+			<div class="scenarios">
+				<h2>Scenarios</h2>
+				<a class='ctrl' href='#' id='seinstoring'>Seinstoring Utr</a>
+				<a class='ctrl' href='#' id='aanrpersoon'>Brand Schiphol</a>
+				<!--
+				<a class='ctrl' href='#' id='aanrpersoon'>Aanrijding met persoon</a>
+				<a class='ctrl' href='#' id='storing'>Kapotte bovenleiding</a>
+				<a class='ctrl' href='#' id='schiedam'>Vast in Schiedam</a>
+				-->
+			</div>
+		</div>
+		<div id='map-info'>
+			<h1>Info</h1>
+		</div>
+	</div>
+		
+	<script type="text/javascript">
+/* Create the map */
+var map = L.map('map',{ zoomControl:false}).setView([52.083726,5.111282], 9);//Utrecht
+// create the tile layer with correct attribution
+var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+var osmlightUrl = 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png';
+var osmAttrib='Map data © OpenStreetMap contributors';
+var osm = new L.TileLayer(osmlightUrl, {opacity: 0.3,minZoom: 8, maxZoom: 30, attribution: osmAttrib});
+map.addLayer(osm);	
+//var topo = L.tileLayer.wms("/geoserver/wms", {
+//				layers: 'nl_data:terrein',
+//				format: 'image/png',
+//				transparent: true,
+//				attribution: "Geodan",
+//				crs: L.CRS.EPSG900913,
+//				tiled: true
+//			}).addTo(map);
+
+				
+/* Initialize the SVG layer */
+map._initPathRoot()    
+
+/* We simply pick up the SVG from the map object */
+var svg = d3.select("#map").select("svg");
+var tmp2;
+var time = new Date();    
+var updatefreq = 10000;
+var playfreq = 1000;
+var freq = updatefreq;
+var l,l2, tweetcatcher;
+var firsttime = true;
+var firsttime_tweets = true;
+var treininterval;
+var tweetinterval;
+var playinterval;
+var tweetCatchPosition = {lng:-10.5,lat:-10.5}; //Not 0,0 that gives us the unreferenced data from twitter
+
+var datefield = document.getElementById('date'),
+    play = document.getElementById('play'),
+    //pause = document.getElementById('pause'),
+    stop = document.getElementById('stop'),
+    catchbtn = document.getElementById('catchbtn');
+    aanrpersoon = document.getElementById('aanrpersoon');
+    seinstoring = document.getElementById('seinstoring');
+    schiedam = document.getElementById('schiedam');
+    kapottetrein = document.getElementById('kapottetrein');
+
+stop.addEventListener("touchstart", stop_anim, false);
+stop.addEventListener("click", stop_anim, false);
+play.addEventListener("touchstart", play_anim, false);
+play.addEventListener('click', play_anim,false);
+catchbtn.addEventListener('click', function(){setTimeout(put_tweet_catcher,100)},false);
+/*
+kapottetrein.addEventListener('click', 
+	function(){play_scenario("kapottetrein",
+	{
+		latln: [52.093702, 5.106477],
+		timestart:new Date(2014,07,25,12,45),
+		timeend: new Date(2014,07,25,15,00),
+		incidenttime:new Date(2014,07,25,12,50) 
+	}
+		)},false);
+*/
+aanrpersoon.addEventListener('click', 
+	function(){play_scenario("aanrijding",
+	{
+		latln: [52.296124, 4.714959],
+		timestart:new Date(2015,01,03,15,10),
+		timeend: new Date(2015,01,03,17,00),
+		incidenttime:new Date(2015,01,03,15,15) 
+	}
+		)},false);
+
+seinstoring.addEventListener('click', 
+	function(){play_scenario("seinstoring",
+	{
+		latln: [51.958865,4.562362],
+		timestart:	new Date(2015,01,02,10,00),
+		timeend: 	new Date(2015,01,02,14,00),
+		incidenttime:new Date(2015,01,02,13,05) 
+	}
+		)},false);
+		/*
+schiedam.addEventListener('click', 
+	function(){play_scenario("storing",
+	{
+		latln: [51.924288,4.403365], //Schiedam
+		timestart:	new Date(2013,06,22,12,50),
+		timeend: 	new Date(2013,06,22,16,00),
+		incidenttime:new Date(2013,06,22,13,00) 
+	}
+		)},false);
+*/
+
+function clearIntervals(){
+	//TODO: put intervals into array
+	clearInterval(playinterval);
+	clearInterval(treininterval);
+	clearInterval(tweetinterval);
+}
+
+function play_scenario(name,config) {
+	var latlng = config.latln;
+	var timestart = config.timestart;
+	var timeend = config.timeend;
+	var incidenttime = config.incidenttime;
+	var incidenttimeend = new Date(config.incidenttime);
+	incidenttimeend.setSeconds(incidenttimeend.getSeconds() + 60);
+	map.setView(latlng,12);
+    clearIntervals();
+    time = timestart; 
+    freq = playfreq;
+    time.setSeconds(0);
+    playinterval = setInterval(function(){
+    	time.setSeconds(time.getSeconds() + 10); //add steps of 1 minute per second
+    	datefield.innerHTML = time.toLocaleString();
+    	gettreinen(time);
+    	gettweets(time);
+    	if (time > incidenttime && time < incidenttimeend){
+    		svg.append("circle")
+					  .attr("class", "ring")
+					  .attr("cx",function(d) { return map.latLngToLayerPoint(latlng).x})
+					  .attr("cy",function(d) { return map.latLngToLayerPoint(latlng).y})
+					  .attr("r", 100)
+					  .style("stroke-width", 3)
+					  .style("stroke", "red")
+					.transition()
+					  .ease("linear")
+					  .duration(1500)
+					  .style("stroke-opacity", 1e-6)
+					  .style("stroke-width", 1)
+					  .style("stroke", "red")
+					  .attr("cx",function(d) { return map.latLngToLayerPoint(latlng).x})
+					  .attr("cy",function(d) { return map.latLngToLayerPoint(latlng).y})
+					  .attr("r", 6)
+					  .remove();
+    	}
+    	if (time > timeend){
+    		console.log('End play');
+    		freq = updatefreq;
+    		clearIntervals();
+    		treininterval = setInterval(function(){
+    			time = new Date();
+    			datefield.innerHTML = time.toLocaleString()
+    			gettreinen(time);
+    		},freq);
+    		tweetinterval = setInterval(function(){
+    			time = new Date();
+    			datefield.innerHTML = time.toLocaleString();
+    			gettweets(time);
+    		},freq);
+    		
+    	}
+    },freq);
+    return false;
+};
+
+function stop_anim(){
+	console.log('stop!');
+    freq = updatefreq;
+	clearIntervals();
+	
+	time = new Date(); 
+	gettreinen(time);
+	gettweets(time);
+	treininterval = setInterval(function(){
+		time = new Date();
+		datefield.innerHTML = time.toLocaleString();
+		console.log(time.toLocaleString());
+		gettreinen(time);
+	},freq);
+	tweetinterval = setInterval(function(){
+		time = new Date();
+		gettweets(time);
+	},freq);
+}
+
+
+
+function play_anim() {
+    console.log('play!');
+    clearIntervals();
+    time.setHours(time.getHours() -1.5); //Set time 2 hours back
+    freq = playfreq;
+    playinterval = setInterval(function(){
+    	time.setSeconds(time.getSeconds() + 30); //add steps of 1 minute per second
+    	datefield.innerHTML = time.toLocaleString();
+    	console.log(time.toISOString());
+    	gettreinen(time);
+    	gettweets(time);
+    	var now = new Date();
+    	if (time > now){
+    		console.log('End play');
+    		freq = updatefreq;
+    		clearIntervals();
+    		treininterval = setInterval(function(){
+    			time = new Date();
+    			datefield.innerHTML = time.toLocaleString()
+    			gettreinen(time);
+    		},freq);
+    		tweetinterval = setInterval(function(){
+    			time = new Date();
+    			datefield.innerHTML = time.toLocaleString();
+    			gettweets(time);
+    		},freq);
+    		
+    	}
+    },freq);
+    return false;
+};
+
+function startCatcher(e){
+	var collection = {"type":"FeatureCollection","features":[]};
+	tweetCatchPosition = e.latlng;
+	var timestamp = new Date().getTime();
+	var newlocation = {
+			type: "Feature",
+			id: timestamp,
+			properties: {
+			},
+			geometry: {
+					type: "Point",
+					coordinates: [
+						e.latlng.lng,
+						e.latlng.lat
+						]
+			},
+			crs: {
+				type: "name",
+				properties: {
+					name: "urn:ogc:def:crs:OGC:1.3:CRS84"
+				}
+			}
+				
+		};
+	collection.features.push(newlocation);
+	map.off('click', startCatcher);
+	tweetcatcher.data(collection);
+}
+
+
+
+function project(x) {
+	var point = map.latLngToLayerPoint(new L.LatLng(x[1], x[0]));
+	return [point.x, point.y];
+}
+
+
+
+function put_tweet_catcher(){
+	console.log('catch tweets');
+	map.on('click', startCatcher);
+}
+
+function tweetdataCallback(json){
+	//Don't use geoserver ID
+	json.features.forEach(function(d){
+		d.id = d.properties.id;
+	});
+	ptweet = d3.select('#map-info').selectAll("p")
+			.data(json.features,  function(d){return d.id;});
+	ptweet.enter().append("p")
+		.classed("tweet",true)
+		.html(function(d){
+			var str = "";
+			for (x in d.properties){
+				if (x == 'created_at'){
+					var date = new Date(d.properties[x]);
+					var property = date.toLocaleString();
+					str = str + " <br> <b>" + x + "</b>: " + property;
+				}
+				else if (x !== 'id'){
+					str = str + " <br> <b>" + x + "</b>: " + d.properties[x];
+				}
+			}
+			return str;
+		})
+		;
+	ptweet.on("click",function(d) {
+		map.setView(d.LatLng,14);
+	})	
+	
+	ptweet.exit().remove();
+	if (firsttime_tweets){
+		firsttime_tweets = false;
+		l2 = new d3layer("tweets",{
+			coolcircles: true,
+			fillcolor: "green",
+			strokecolor: "none",
+			labels: true,
+			highlight: true,
+			labelconfig: {
+				field:"title"
+			}
+		}).data(json);
+	}
+	else 
+	{
+		l2.data(json);
+	}
+	
+	
+}
+	
+/* Prepare treindata as a geoJSON collection */
+function treindataCallback(json){
+	var collection = {"type":"FeatureCollection","features":[]};
+	json.forEach(function(d){
+		if (d.Trackee.match(/OBIS/g) || d.Trackee >= 4011)
+			var color =  "#000099";
+		else if (d.Trackee.match(/OBU/g) || d.Trackee < 4011)
+			var color = "#ffff00";
+		else
+			var color = "#cccccc";
+		var newlocation = {
+			type: "Feature",
+			color: color,
+			id: d.Trackee,
+			properties: {
+				id: d.Trackee, 
+				organisation: d.Organisation, 
+				speed: d.Speed, 
+				track: d.Track, 
+				bps: d.Bps,
+				dop: d.Dop
+			},
+			geometry: {
+					type: "Point",
+					coordinates: [
+						d.Longitude,
+						d.Latitude
+						]
+			},
+			crs: {
+				type: "name",
+				properties: {
+					name: "urn:ogc:def:crs:OGC:1.3:CRS84"
+				}
+			}
+				
+		};
+		collection.features.push(newlocation);
+	});
+	
+	/* Now update the map with this data */
+	if (firsttime){
+		firsttime = false;
+		l = new d3layer("treinen",{
+			coolcircles: false,
+			fillcolor: "orange",
+			strokecolor: "none",
+			highlight: true
+		}).data(collection);
+	}
+	else 
+	{
+		l.data(collection);
+	}
+	
+}
+
+
+var emptycoll = {"type":"FeatureCollection","features":[{
+			type: "Feature",
+			id: 1,
+			properties: {id:1},
+			geometry: {
+					type: "Point",
+					coordinates: [tweetCatchPosition.lat,tweetCatchPosition.lng]
+			},
+			crs: {
+				type: "name",
+				properties: {
+					name: "urn:ogc:def:crs:OGC:1.3:CRS84"
+				}
+			}
+			}]};
+
+tweetcatcher = new d3layer("tweetcatcher",{
+		coolcircles: true,
+		fillcolor: "rgba(204,204,255,0.5)",
+		strokecolor: "orange",
+		strokewidth: 3,
+		scale: 'd',
+		highlight: false,
+		pointradius: 0.02
+}).data(emptycoll);
+
+var trailLayer = new d3layer("traillayer",{
+	coolcircles: false,
+	fillcolor: "orange",
+	strokecolor: "none",
+	highlight: true
+});
+
+function gettweets(t){
+	var timestmp = parseInt(t.getTime()/1000);
+	var interval = 5;
+	var x = tweetCatchPosition.lng;
+	var y = tweetCatchPosition.lat;
+	var datasource_tweets = "http://research.geodan.nl/service/osgis_geoserver/tweets/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=tweets:recent_tweets_within&maxFeatures=50&outputFormat=json&viewparams=timestmp:" + timestmp+";interval:"+interval+";x:"+x+";y:"+y;
+	d3.json(datasource_tweets,tweetdataCallback);
+}
+	
+	
+function gettreinen(t){
+	var timestring = t.toISOString();
+	var tok = 'NSadmin:20intercity13'; //'ns:prima14';
+
+	//var hash = Base64.encode(tok);
+	//var datasource_treinen = "/cgi-bin/proxy.cgi?url=" + escape("http://services.geodan.nl/beta/location/api/positions?username=NS&timestamp="+timestring);
+	var datasource_treinen = "http://research.geodan.nl/service/treinen/location/api/positions?username=ns&timestamp="+timestring;
+	d3.json(datasource_treinen,treindataCallback)
+	    //.header("Accept-encoding", "gzip, deflate");
+	    //.header("Authorization","Basic " + hash);
+	    
+}
+gettreinen(time);
+gettweets(time);
+treininterval = setInterval(function(){
+	time = new Date();
+	datefield.innerHTML = time.toLocaleString();
+	gettreinen(time);
+},freq);
+
+tweetinterval = setInterval(function(){
+	gettweets(new Date());
+},freq);
+
+
+
+	</script>
+</body>
+</html>
