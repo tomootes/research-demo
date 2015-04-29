@@ -32,7 +32,9 @@
 },  
 {
 	"title": "Websockets (COW)",
-	"url": "http://research.geodan.nl/sites/geofort/cow/demo/"
+	"url": "http://research.geodan.nl/sites/geofort/cow/demo/",
+    "thumbnail":"thumbnails/cow.gif",
+    "tags":["websockets","instant","communication","html5","crisis management"]
 },                  
 {
 	"title": "Vectortiles en topojson",
@@ -70,7 +72,7 @@
 {
 	"title": "Hoe hoog?",
 	"url": "http://research.geodan.nl/sites/hoogte/",
-    "thumbnail":"thumbnails/hoogte.png",
+    "thumbnail":"thumbnails/hoogte.jpg",
     "tags":["ahn","mobile","nomap","geolocation"]
 },                                                                   
 {
