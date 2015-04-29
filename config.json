@@ -60,7 +60,7 @@
 },                                                 
 {
 	"title": "Kadaster bag",
-	"url": "http://research.geodan.nl/sites/kadaster/bag2.html"
+	"url": "http://research.geodan.nl/sites/kadaster/bag2.html",
     "thumbnail":"thumbnails/kadaster-bag.gif",
     "tags":["vector","filtering","buildings"]
 },                                                    
