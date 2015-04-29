@@ -114,11 +114,19 @@
 {
 	"title": "Natuurbrandmodel",
 	"url": "http://model.geodan.nl/main/gmi/",
+	"thumbnail":"./thumbnails/natuurbrand.gif",
 	"tags": ["natuubrand", "geoext", "model"]
 },
 {
 	"title": "BGT 3D",
 	"url": "./bgt_3d/index.html",
+	"thumbnail":"./thumbnails/bgt3d.gif",
 	"tags": ["bgt", "3d", "webgl", "x3d"]
+},
+{
+        "title": "Mappu",
+        "url": "./mappu/index.html",
+	"thumbnail":"./thumbnails/mappu.gif",
+        "tags": ["mappu", "3d"]
 }
 ]
