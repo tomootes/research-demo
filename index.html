@@ -51,7 +51,8 @@ html /deep/   core-header-panel[main] {
 var map = L.map("map").setView([52.342, 4.91], 14);    
         var color = new L.StamenTileLayer("watercolor",{opacity:0.3});
         var toner = new L.StamenTileLayer("toner");
-        map.addLayer(color);      
+        map.addLayer(color);
+        map.locate({setView: true, maxZoom: 16});
         map.zoomControl.removeFrom(map);
         </script>
 </body>
