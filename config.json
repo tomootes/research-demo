@@ -12,12 +12,14 @@
     "title":"Cerise",
     "tags":["d3","animation","energy","html5"],
     "thumbnail":"thumbnails/cerise.gif",
+    "description":"Showing the per-hour energy use with the help of linked data, D3 and crossfilter", 
     "date":"2014"
 },
 {
     "title": "Relatie diagram", 
     "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html",
     "thumbnail":"thumbnails/relaties.gif",
+    "description":"A demonstration showing the use of a force-layout diagram with client-service relations.",
     "tags":["d3","zorg"],
     "date":"2013"
 },
@@ -25,12 +27,14 @@
     "title": "Erplex projecten", 
     "url": "http://model.geodan.nl/main/d3test/erplex_projecten.html",
     "thumbnail":"thumbnails/erplexbollen.gif",
+    "description":"Force layout showing the amount of hours spent per project per person.",
     "tags":["d3"],
     "date":"2013"
 },           
 {   
     "title": "OV vectordata",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html",
+	"description":"Large scale aggregated OV data for the Netherlands on a map in D3",
 	"thumbnail":"thumbnails/ovdemo.gif",
 	"date":"2013"
 },  
@@ -47,7 +51,8 @@
 	"url": "http://research.geodan.nl/sites/vectortiles/",
 	"tags": ["vectortiles", "d3", "topojson"],
     "thumbnail":"thumbnails/vectortiles.gif",
-    "date":"september 2014"
+    "date":"september 2014",
+    "description":"Simple demo showing the use of vectortiles with different color schemas."
 
 },                
 {
@@ -55,14 +60,16 @@
 	"url": "http://model.geodan.nl/main/d3test/webgl1.html",
 	"thumbnail":"thumbnails/ahnview.gif",
 	"tags": ["AHN", "3d","webgl", "threejs"],
-	"date":"2013"
+	"date":"2013",
+	"description":"Simple demo showing a tile of AHN in webgl, draped with sat image"
 },                         
 {
 	"title": "Bag 3D",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html",
 	"thumbnail":"thumbnails/bag3d.gif",
 	"tags": ["bag", "3d","webgl", "threejs"],
-	"date":"2013"
+	"date":"2013",
+	"description":"Simple demo showing the BAG extruded in Threejs"
 },                
 {
 	"title": "Kadaster routes",
@@ -131,27 +138,31 @@
 	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
 	"thumbnail":"thumbnails/top10nl.gif",
 	"tags": ["top10nl", "3d", "webgl", "x3d"],
-	"date":"december 2014"
+	"date":"december 2014",
+	"description":"Showing the result of combining the topographic dataset of NL with pointcloud"
 },
 {
 	"title": "Natuurbrandmodel",
 	"url": "http://model.geodan.nl/main/gmi/",
 	"thumbnail":"./thumbnails/natuurbrand.gif",
 	"tags": ["natuubrand", "geoext", "model"],
-	"date":"august 2014"
+	"date":"august 2014",
+	"description":"Interface to a forestfire model, used by firefighters"
 },
 {
 	"title": "BGT 3D",
 	"url": "./bgt_3d/index.html",
 	"thumbnail":"./thumbnails/bgt3d.gif",
 	"tags": ["bgt", "3d", "webgl", "x3d"],
-	"date":"february 2015"
+	"date":"february 2015",
+	"description":"Showing the result of combining the BGT dataset of NL with pointcloud"
 },
 {
         "title": "Mappu",
         "url": "./mappu/index.html",
 	"thumbnail":"./thumbnails/mappu.gif",
         "tags": ["mappu", "3d"],
-        "date":"march 2015"
+        "date":"march 2015",
+        "description":"A new mapping library created by geodan"
 }
 ]
