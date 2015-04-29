@@ -162,6 +162,7 @@ height: 200px;
         this.demos = d.detail.response;             
         this.demos.forEach(function(d){
             d.tags=d.tags?d.tags:[];
+            d.thumbnail=d.thumbnail?d.thumbnail:"blank.gif";
             d.tags.push(d.title);
             d.tags.forEach(function(t){
                 if(taglist[t]===undefined){

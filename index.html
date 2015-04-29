@@ -21,6 +21,18 @@
 * {
 font-size:14px;font-family:"RobotoDraft",Helvetica,Arial,sans-serif;font-weight:300;line-height:20px
 }
+
+ #map {
+        float:right;
+        position: absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        background:white;
+    }
+</style>
+<style shim-shadowdom>
 html /deep/   core-toolbar {
     background:rgba(255,255,255,0.9);
     color: black;
@@ -32,17 +44,7 @@ html /deep/   core-header-panel[main] {
     background:rgba(255,255,255,0.6);
     color: black;
 }
- #map {
-        float:right;
-        position: absolute;
-        top:0px;
-        bottom:0px;
-        left:0px;
-        right:0px;
-        background:white;
-    }
 </style>
-
 </head>
 <body fullbleed layout vertical>
 <div id="map"></div>
