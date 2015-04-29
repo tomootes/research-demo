@@ -73,7 +73,12 @@ height: 200px;
         font-size: 80%;
         color: #333;
     }
+    .date {
+      color: #aab;
+      font-style: italic;
+      font-variant: small-caps;
 
+    }
     </style>
     
 <core-scaffold >
@@ -102,6 +107,7 @@ height: 200px;
     <div class="card-content">
     <template if="{{!demo.hover||!demo.description}}">
     <img src="{{demo.thumbnail}}"/>
+    <span class="date">{{demo.date}}</span>
     </template>
     <template if="{{demo.hover}}">
     {{demo.description}}

@@ -4,7 +4,8 @@
     "title":"CBS Vector Tiles",
     "tags":["vector tiles","filter","polymer","leaflet","cbs","html5"],
     "thumbnail":"thumbnails/buurten.gif",
-    "description":"A viewer which allows for dynamic filtering on attributes using vector tiles"
+    "description":"A viewer which allows for dynamic filtering on attributes using vector tiles",
+    "date":"may 2015"
 },
 {
     "url":"http://research.geodan.nl/sites/LODUI",
