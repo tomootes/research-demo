@@ -44,7 +44,9 @@
 {
 	"title": "Vectortiles en topojson",
 	"url": "http://research.geodan.nl/sites/vectortiles/",
-	"tags": ["vectortiles", "d3", "topojson"]
+	"tags": ["vectortiles", "d3", "topojson"],
+    "thumbnail":"thumbnails/vectortiles.gif",
+    "date":"september 2014"
 },                
 {
 	"title": "AHN in Webgl",
