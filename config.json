@@ -5,7 +5,7 @@
     "tags":["vector tiles","filter","polymer","leaflet","cbs","html5"],
     "thumbnail":"thumbnails/buurten.gif",
     "description":"A viewer which allows for dynamic filtering on attributes using vector tiles",
-    "date":"april 2015"
+    "date":"may 2015"
 },
 {
     "url":"http://research.geodan.nl/sites/LODUI",
@@ -17,12 +17,14 @@
 {
     "title": "Relatie diagram", 
     "url": "http://model.geodan.nl/main/d3test/zorgrelaties.html",
+    "thumbnail":"thumbnails/relaties.gif",
     "tags":["d3","zorg"],
     "date":"2013"
 },
 {
     "title": "Erplex projecten", 
     "url": "http://model.geodan.nl/main/d3test/erplex_projecten.html",
+    "thumbnail":"thumbnails/erplexbollen.gif",
     "tags":["d3"],
     "date":"2013"
 },           
@@ -34,6 +36,7 @@
 {   
     "title": "D3 vectorkaart (OV9292 data)",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/ov.html",
+	"thumbnail":"thumbnails/ovdemo.gif",
 	"date":"2013"
 },  
 {
@@ -51,12 +54,14 @@
 {
 	"title": "AHN in Webgl",
 	"url": "http://model.geodan.nl/main/d3test/webgl1.html",
+	"thumbnail":"./thumbnails/ahnview.gif",
 	"tags": ["AHN", "3d","webgl", "threejs"],
 	"date":"2013"
 },                         
 {
 	"title": "Bag 3D",
 	"url": "http://research.geodan.nl/sites/D3Layer/demos/bag3d.html",
+	"thumbnail":"./thumbnails/bag3d.gif",
 	"tags": ["bag", "3d","webgl", "threejs"],
 	"date":"2013"
 },                
@@ -88,8 +93,7 @@
 	"title": "BAG bouwjaar",
 	"url": "http://bag.edugis.nl/",
     "thumbnail":"thumbnails/ibag.gif",
-    "tags":["canvas","html5","bag","buildings","time","slider","dynamic"],
-    "date":"January 2012"
+    "tags":["canvas","html5","bag","buildings","time","slider","dynamic"]
 },               
 {
 	"title": "Waalweelde",
