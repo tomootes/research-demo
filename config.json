@@ -181,6 +181,14 @@
     "tags":["vector","filtering","buildings"],
     "date":"september 2012",
     "description":"A simple demo that allows the user to select buildings based on their usage-type"
+},                                                 
+{
+	"title": "Phoenix: Child's play",
+	"url": "https://www.youtube.com/watch?v=cZ-wRTF_jCs",
+    "thumbnail":"thumbnails/childsplay.gif",
+    "tags":["phoenix","video","intuitive","drawing","spatial planning"],
+    "date":"august 2012",
+    "description":"The kids of a colleague came by while we were working on a movie about our spatial planning application 'Phoenix'. With hardly any guidance and no previous exposure they searched for their house, drew hearts and generally had fun."
 },                                                    
 {
 	"title": "Hoe hoog?",
