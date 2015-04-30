@@ -22,6 +22,14 @@
 	"tags": ["bgt", "3d", "webgl", "x3d"],
 	"date":"february 2015",
 	"description":"Showing the result of combining the BGT dataset of NL with pointcloud"
+},                 
+{
+	"title": "Immersive 3D",
+	"url": "https://www.youtube.com/watch?v=GNxYz2UcETM",
+	"thumbnail":"./thumbnails/immersive.gif",
+	"tags": ["falcon", "3d", "leap motion", "oculus rift","unity","video"],
+	"date":"february 2015",
+	"description":"A video showing immersive 3D with novel navigation controls"
 },                                                         
 {
 	"title": "TOP10NL 3D",
@@ -103,6 +111,14 @@
     "tags":["video","ultrafijnstof","html5","gps","time","graph","canvas"],
     "date":"august 2013",
     "description":"Various cycle-routes through cities to show ultra-fine-dust measurements, using onboard video, GPS and measurements"
+},  
+{
+	"title": "Phoenix Multi User Map",
+	"url": "https://www.youtube.com/watch?v=DDA8jrPAPRA",
+    "thumbnail":"thumbnails/multiusermap.gif",
+    "tags":["video","phoenix","cow","multi user","websockets"],
+    "date":"januari 2013",
+    "description":"A video showing Phoenix instantly sharing features with webclients and mobile phones"
 },   
 {
     "title": "Relatie diagram", 
@@ -189,5 +205,13 @@
     "tags":["canvas","html5","bag","buildings","time","slider","dynamic"],
     "date":"january 2012",
     "description":"By encoding the age of buildings in specific PNG-tiles, this viewer uses canvas to rapidly show the growth of cities over time"
+},                                                                   
+{
+	"title": "Tangible Cyclorama",
+	"url": "https://www.youtube.com/watch?v=CdLcTaJzTmI",
+    "thumbnail":"thumbnails/tangible.gif",
+    "tags":["surface","tangible ui","cyclorama","video"],
+    "date":"august 2009",
+    "description":"A video showing how manipulating real world objects can be translated into a 360 view of the underlying map."
 }
 ]
