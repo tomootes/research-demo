@@ -1,5 +1,12 @@
 [
 {
+    "url":"http://research.geodan.nl/sites/bag-tiles",
+    "title":"BAG Vector Tiles",
+    "tags":["vector tiles","mapboxgl","bag","html5","clustering"],
+    "thumbnail":"thumbnails/bagtiles.gif",
+    "description":"A viewer which shows the rendering speeds of vector-tiles with serverside clustering of 11 milion buildings",
+    "date":"may 2015"
+},  {
     "url":"http://research.geodan.nl/sites/buurten",
     "title":"CBS Vector Tiles",
     "tags":["vector tiles","filter","polymer","leaflet","cbs","html5"],
