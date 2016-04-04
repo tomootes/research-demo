@@ -228,5 +228,13 @@
     "tags":["surface","tangible ui","cyclorama","video"],
     "date":"august 2009",
     "description":"A video showing how manipulating real world objects can be translated into a 360 view of the underlying map."
+},
+{
+    "title": "Provincies en data",
+    "url": "./provincies-data/index.html",
+    "thumbnail":"thumbnails/provincies-data.png",
+    "tags":["data","D3","Ol 3"],
+    "date":"April 2016",
+    "description":"An webapp using D3 and Open Layers 3 to show data on the map."
 }
 ]
