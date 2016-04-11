@@ -20,9 +20,6 @@
     "bootstrap": "~3.3.6",
     "Leaflet.MapboxVectorTile": "~0.1.6",
     "angular": "~1.4.8",
-    "chroma": "^1.2.2",
-    "chroma-js": "^1.1.1",
-    "nvd3": "^1.8.2",
-    "openlayers3": "^3.0.0"
+    "nvd3": "^1.8.2"
   }
 }

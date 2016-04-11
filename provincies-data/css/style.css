@@ -18,7 +18,7 @@ body, html{
 }
 
 #overlay-wrapper .panel{
-	margin: 0px 20px 20px;
+	margin: 20px 20px 0px;
 	box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
 	display: inline-block;
 	float: right;
@@ -41,10 +41,13 @@ body, html{
 	clear: none;
 }
 
+.list-group-item{
+	padding: 6px;
+}
 
 #overlay-wrapper .panel.values #chart svg{
-	width: 300px;
-	height: 400px;
+	width: 250px;
+	height: 350px;
 }	
 
 #overlay-wrapper .panel.values #chart{
@@ -53,6 +56,12 @@ body, html{
 
 #overlay-wrapper .panel .list-group .list-group-item .radio{
 	margin: 0px;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.list-group-item{
+	font-size: 11px;
 }
 
 .ol-attribution {
